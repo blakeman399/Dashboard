@@ -1,4 +1,4 @@
-//External dependences
+//External dependencies
 var express = require('express');
 var app = express();
 var server = require('http').Server(app);
@@ -9,9 +9,9 @@ var fs = require('fs'),
     request = require('request');
 var path = require('path');
 var bodyParser = require('body-parser');
-var HueApi = require("node-hue-api").HueApi;
-app.use(express.static(path.join(__dirname, '/bower_components/gentelella/')));
-app.use(express.static(path.join(__dirname, '/bower_components/gentelella/production')));
+app.use(express.static(path.join(__dirname, '/public/')));
+app.use(express.static(path.join(__dirname, '/')));
+
 
 app.use(bodyParser.urlencoded({
     extended: false
@@ -19,7 +19,10 @@ app.use(bodyParser.urlencoded({
 
 
 app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname + '/bower_components/gentelella/production/' + "index.html"));
+    res.sendFile(path.join(__dirname + "index.html"));
+});
+app.get('/layouts', function (req, res) {
+    res.sendFile(path.join(__dirname + "index.html"));
 });
 
 
