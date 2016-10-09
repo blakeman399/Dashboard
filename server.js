@@ -26,6 +26,7 @@ app.get('/layouts', function (req, res) {
 });
 
 
+
 var numClients = 0;
 var numConnections = 0;
 

@@ -1,0 +1,86 @@
+.picker-container {
+    display: flex;
+    width: 260px;
+    height: 260px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.hue-picker {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.hue-picker .hue {
+    border: none;
+    background: transparent;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    transform: translate(-22.5px, -22.5px);
+}
+.hue-picker .hue:hover {
+    transform: translate(-22.5px, -22.5px) scale(1.2);
+}
+.hue-picker .hue:focus {
+    outline: none;
+}
+.hue-picker .hue:first-child {
+    top: 51.05708883px;
+    left: 51.05708883px;
+}
+.hue-picker .hue:nth-child(2) {
+    top: 25.82223194px;
+    left: 94.7651431px;
+}
+.hue-picker .hue:nth-child(3) {
+    top: 25.82223194px;
+    left: 145.2348569px;
+}
+.hue-picker .hue:nth-child(4) {
+    top: 51.05708883px;
+    left: 188.94291117px;
+}
+.hue-picker .hue:nth-child(5) {
+    top: 94.7651431px;
+    left: 214.17776806px;
+}
+.hue-picker .hue:nth-child(6) {
+    top: 145.2348569px;
+    left: 214.17776806px;
+}
+.hue-picker .hue:nth-child(7) {
+    top: 188.94291117px;
+    left: 188.94291117px;
+}
+.hue-picker .hue:nth-child(8) {
+    top: 214.17776806px;
+    left: 145.2348569px;
+}
+.hue-picker .hue:nth-child(9) {
+    top: 214.17776806px;
+    left: 94.7651431px;
+}
+.hue-picker .hue:nth-child(10) {
+    top: 188.94291117px;
+    left: 51.05708883px;
+}
+.hue-picker .hue:nth-child(11) {
+    top: 145.2348569px;
+    left: 25.82223194px;
+}
+.hue-picker .hue:nth-child(12) {
+    top: 94.7651431px;
+    left: 25.82223194px;
+}
+.hue-picker .hue:nth-child(13) {
+    top: 50%;
+    left: 92.5px;
+}
+.hue-picker .hue:nth-child(14) {
+    top: 50%;
+    left: 147.5px;
+    border: 1px solid #ddd;
+}

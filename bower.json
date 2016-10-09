@@ -1,0 +1,21 @@
+{
+  "name": "Dashboard.js",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Blake Mastrud <blakejosephmastrud@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/blakeman399/Dashboard",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "alertify": "^0.3.10"
+  }
+}
