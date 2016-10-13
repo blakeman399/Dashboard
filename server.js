@@ -20,6 +20,7 @@ app.use(bodyParser.urlencoded({
 
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname + "index.html"));
+    console.log("Serving HTML to Client")
 });
 app.get('/layouts', function (req, res) {
     res.sendFile(path.join(__dirname + "index.html"));
